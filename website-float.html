@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- unsplash.com = untuk cari bg hd -->
+    <!-- tinkercad.com = 3d effect -->
+    <!-- edx.org / nyari sertifikasi -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width: 800px;
+            height: 910px;
+            border: 1px solid black;
+            margin: 50px auto;
+            position: relative;
+        }
+        .container .logo{
+            position: absolute;
+            background-image: url(twt.png);
+            background-size: 50px 50px;
+            width: 50px;
+            height: 50px;
+            top : 10px;
+            right: 10px;
+
+        }
+        .container .layar{
+            background-color:rgba(0, 0, 0, 0.281);
+            width: 800px;
+            height: 100px;
+            position: absolute;
+        }
+        /* bagian judul */
+        .container .judul{
+            border: 1px solid black;
+            color: white;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+            background-color: rgb(37, 37, 124);
+        }
+        /* akhir bagian judul */
+        /* bagian menu */
+        .container .menu{
+            border: 1px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+            background-color: yellow;
+        }
+        a{
+            padding: 20px;
+        }
+        /* akhir bagian menu */
+        /* bagian banner */
+        .container .banner{
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 50px 50px 50px 50px;
+            background-color: mintcream;
+        }
+        img{
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* akhir bagian banner */
+        /* bagian judar */
+        .container .judar{
+            border: 1px solid black;
+            color: blue;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+            background-color: yellow;
+        }
+        /* akhir bagian judar */
+        /* bagian konten */
+        .container .konten{
+            width: 800px;
+            height: 200px;
+            border: 1px solid black;
+            color: cornsilk;
+            text-align: justify;
+            box-sizing: border-box;
+            background-color: rgb(24, 40, 94);
+            overflow: auto;
+        }
+        .container .konten img{
+            float: left;
+        }
+        /* akhir bagian konten */
+        /* bagian footer */
+        .footer{
+            border: 1px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: mintcream;
+        }
+        /* akhir bagian footer */
+        .container .galery{
+            width: 190px;
+            height: 100px;
+            margin: 5px 5px 5px 5px;
+            background-color: yellow;
+            float: left;
+            background-image: url("ub.png");
+            background-size: 75px 75px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .panel{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: fixed;
+            left: 1200px;
+            top: 10px;
+            text-align: center; 
+            border-radius: 10px;  
+        }
+        .baru{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            bottom: 0px;
+            position: relative;
+        }
+        .baru2{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            bottom: 0px;
+            position: relative;
+        }
+    </style>
+
+</head>
+<body>
+    <div class = "panel">
+        <br>
+        <button type="button" onclick="ubahwarna_dark()">mode malam</button>
+        <br>
+        <br>
+        <button type="button" onclick="ubahwarna_light()">mode siang</button>
+    </div>
+    <br>
+    <div class = "container">
+        <div class = "logo">
+        </div>
+        <div class = "judul">
+            <h1>Judul Website</h1>
+        </div>
+        <div class = "layar">
+        </div>
+        <div class = "menu">
+            <a href="#">HOME</a>
+            <a href="#">PRODUCT</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class = "banner">
+            <img src = "ub.png">
+        </div>
+        <div class = "judar">
+            <h2> Ini adalah judul artikel</h2>
+        </div>
+        <div id="konten" class = "konten">
+            <img src = "ub.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis quisquam voluptate modi, eos amet? Reiciendis assumenda, dolores libero esse voluptas animi dolorem, quos iusto perferendis necessitatibus iure molestias repellendus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel accusamus excepturi sit consectetur eos molestias, quisquam quidem sequi quia tenetur nesciunt labore optio rem repellendus temporibus omnis quam illo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, nostrum beatae, quos dignissimos labore repudiandae exercitationem eligendi, sunt atque repellendus odio voluptas modi neque sapiente obcaecati temporibus magni. Delectus, nihil.</p>
+        </div>
+        <div class = "footer">
+            <h1>ini footer</h1>
+        </div>
+        <div class = "galery">
+            1
+        </div>
+        <div class = "galery">
+            2
+        </div>
+        <div class = "galery">
+            3
+        </div>
+        <div class = "galery">
+            4
+        </div>
+        <div class = "galery">
+            5
+        </div>
+        <div class = "galery">
+            6
+        </div>
+        <div class = "galery">
+            7
+        </div>
+        <div class = "galery">
+            8
+        </div>
+    </div>
+
+    <div id="baru" class="baru" onmouseup="divkelakuan()" onmousedown="divkelakuan2()">
+    </div>
+
+<script>
+    function ubahwarna_dark(){
+        document.getElementById('konten').style.backgroundColor="darkblue";
+        document.getElementById('konten').style.color="orange";
+        document.getElementById('konten').style.border="5px dashed orange";
+    }
+    function ubahwarna_light(){
+        document.getElementById('konten').style.backgroundColor="orange";
+        document.getElementById('konten').style.color="darkblue";
+        document.getElementById('konten').style.border="5px dashed darkblue";
+    }
+    function divkelakuan(){
+        document.getElementById('baru').className="baru2";
+    }
+    function divkelakuan2(){
+        document.getElementById('baru').className="baru";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+           padding: 0;
+           margin: 0;
+        }
+        .container{
+            height: 300px;
+            width: 400px;
+            background-color: blue;
+            margin: 1px 1px 1px 1px;
+        }
+
+        .container2{
+            height: 100px;
+            width: 400px;
+            border: 1px solid blue;
+            
+        }
+        .kotak1{
+            width: 90px;
+            height: 85px;
+            border: 2px solid red;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        .kotak2{
+            width: 90px;
+            height: 85px;
+            border: 2px solid yellow;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        .kotak3{
+            width: 90px;
+            height: 85px;
+            border: 2px solid green;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        .kotak4{
+            width: 90px;
+            height: 85px;
+            border: 2px solid black;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="container">
+
+    </div>
+    <div class="container2">
+        <div class="kotak1" type="button" onclick="red()" >
+
+        </div>
+        <div class="kotak2" type="button" onclick="yellow()">
+        
+        </div>
+        <div class="kotak3" type="button" onclick="green()">
+    
+        </div>
+        <div class="kotak4" type="button" onclick="black()">
+        
+        </div>
+    </div>
+
+    <script>
+        function red(){
+            document.getElementById('container').style.backgroundColor="red";
+        }
+        function yellow(){
+            document.getElementById('container').style.backgroundColor="yellow";
+        }
+        function green(){
+            document.getElementById('container').style.backgroundColor="green";
+        }
+        function black(){
+            document.getElementById('container').style.backgroundColor="black";
+        }
+            
+    </script>
+</body>
+</html>

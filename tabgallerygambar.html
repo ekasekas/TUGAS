@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+           padding: 0;
+           margin: 0;
+        }
+        .container{
+            height: 300px;
+            width: 400px;
+            background-image: url("flower.png");
+            background-size: 75px 75px;
+            background-position: center;
+            margin: 1px 1px 1px 1px;
+        }
+
+        .container2{
+            height: 100px;
+            width: 400px;
+            border: 1px solid blue;
+            
+        }
+        .kotak1{
+            width: 90px;
+            height: 85px;
+            border: 2px solid red;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            background-image: url("gambar1.png");
+            background-size: 75px 75px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .kotak2{
+            width: 90px;
+            height: 85px;
+            border: 2px solid yellow;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            background-image: url("gambar2.png");
+            background-size: 75px 75px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .kotak3{
+            width: 90px;
+            height: 85px;
+            border: 2px solid green;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            background-image: url("gambar3.png");
+            background-size: 75px 75px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .kotak4{
+            width: 90px;
+            height: 85px;
+            border: 2px solid black;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            background-image: url("gambar4.png");
+            background-size: 75px 75px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="container">
+
+    </div>
+    <div class="container2">
+        <div class="kotak1" type="button" onclick="gambar1()" >
+
+        </div>
+        <div class="kotak2" type="button" onclick="gambar2()">
+        
+        </div>
+        <div class="kotak3" type="button" onclick="gambar3()">
+    
+        </div>
+        <div class="kotak4" type="button" onclick="gambar4()">
+        
+        </div>
+    </div>
+
+    <script>
+        function gambar1(){
+            document.getElementById('container').style.backgroundImage="url(gambar1.png)";
+        }
+        function gambar2(){
+            document.getElementById('container').style.backgroundImage="url(gambar2.png)";
+        }
+        function gambar3(){
+            document.getElementById('container').style.backgroundImage="url(gambar3.png)";
+        }
+        function gambar4(){
+            document.getElementById('container').style.backgroundImage="url(gambar4.png)";
+        }
+            
+    </script>
+</body>
+</html>

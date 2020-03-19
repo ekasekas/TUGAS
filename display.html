@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+           padding: 0;
+           margin: 0;
+        }
+        .tampil1{
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 100px;
+        }
+        .tampil2{
+            width: 85%;
+            height: 50px;
+            overflow: auto;
+            background-color: white;
+        }
+        .tampil3{
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 100px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="tampil1" id="tampil1">
+        <div class="tampil2">
+            <h3>isi kotak<button id="btn" style="float: right;" onclick="tutup()">X</button></h3>
+        </div>
+    </div>
+        <h1>Contoh Modal</h1>
+        <br>
+        <button onclick="tambahdata()">Tambah Data Baru</button>
+
+    <script>
+        function tambahdata(){
+            document.getElementById('tampil1').className="tampil3";
+        }
+        function tutup(){
+            document.getElementById('tampil1').className="tampil1";
+        }
+    </script>
+</body>
+</html>

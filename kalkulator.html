@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- unsplash.com = untuk cari bg hd -->
+    <!-- tinkercad.com = 3d effect -->
+    <!-- edx.org / nyari sertifikasi -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width: 350px;
+            height: 350px;
+            margin: 10px auto;
+            background-color: rgb(255, 255, 181);
+        }
+        .judul{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .isi1{
+            width: 260px;
+            height: 20px;
+            background-color: rgb(141, 141, 60);
+            margin: 50px 20px;
+            padding: 10px 25px 10px 25px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .isi2{
+            width: 260px;
+            height: 20px;
+            background-color: rgb(141, 141, 60);
+            margin: 50px 20px;
+            padding: 10px 25px 10px 25px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .kuning{
+            width: 330px;
+            background-color: yellow;
+            text-align: center;  
+            padding: 10px 10px 10px 10px;
+        }
+        .tombol{
+            background:rgb(97, 97, 42);
+            color:white;
+            border-top:0;
+            border-left:0;
+            border-right:0;
+            border-bottom:5px solid rgb(141, 141, 60);
+            padding:7px 17px;
+            text-decoration:none;
+            font-family:sans-serif;
+            font-size:8pt;
+        }
+    </style>
+
+</head>
+
+<script>
+    function tambah(){
+        var bilangan1=document.getElementById("isi1").value;
+        var bilangan2=document.getElementById("isi2").value;
+        var isi1=Number(bilangan1);
+        var isi2=Number(bilangan2);
+        var hasil=isi1+isi2;
+        document.getElementById("hasiltext").innerHTML=hasil;
+    }
+    function kurang(){
+        var bilangan1=document.getElementById("isi1").value;
+        var bilangan2=document.getElementById("isi2").value;
+        var isi1=Number(bilangan1);
+        var isi2=Number(bilangan2);
+        var hasil=isi1-isi2;
+        document.getElementById("hasiltext").innerHTML=hasil;
+    }
+    function kali(){
+        var bilangan1=document.getElementById("isi1").value;
+        var bilangan2=document.getElementById("isi2").value;
+        var isi1=Number(bilangan1);
+        var isi2=Number(bilangan2);
+        var hasil=isi1*isi2;
+        document.getElementById("hasiltext").innerHTML=hasil;
+    }
+    function bagi(){
+        var bilangan1=document.getElementById("isi1").value;
+        var bilangan2=document.getElementById("isi2").value;
+        var isi1=Number(bilangan1);
+        var isi2=Number(bilangan2);
+        var hasil=isi1/isi2;
+        document.getElementById("hasiltext").innerHTML=hasil;
+    }
+</script>
+
+<body>
+    <div class = "container">
+        <div class ="judul">
+            <h2>Kalkulator Javascript</h2>
+        </div>
+        <div class ="isi1">
+            <input type="text" id="isi1" />
+        </div>
+        <div class ="isi2">
+            <input type="text" id="isi2" />
+        </div>
+        <div class ="kuning">
+            <input type="button" onclick="tambah()" value="tambah" class="tombol"></button>
+            <input type="button" onclick="kurang()" value="kurang" class="tombol"></button>
+            <input type="button" onclick="kali()" value="kali" class="tombol"></button>
+            <input type="button" onclick="bagi()" value="bagi" class="tombol"></button>
+        </div>
+        <div class ="hasil">
+            <center>
+                <h1 id="hasiltext">Ini Hasilnya</h1>
+            </center>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

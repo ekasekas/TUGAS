@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .header{
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            position: fixed;
+            top:0;
+            left:0;
+            padding: 5px;
+        }
+        .header h1{
+            font-size: large;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:blanchedalmond;
+        }
+        .kiri{
+            margin-top: 100px;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+        .kanan{
+            margin-top: 100px;
+            width: 30%;
+            height: 100%;
+            float: left;
+            background-color: pink;
+        }
+        .kotak{
+            width: 300px;
+            height: 300px;
+            margin-left: 5px;
+            float: left;
+            padding-top: 10px;
+            background-color: gainsboro;
+            /* background-position: center; */
+        }
+        .kotak button{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Vokasi Pedia</h1>
+    </div>
+    <div class="kiri">
+        <div class="kotak">
+            <center><img src="gambar1.png" width="250px"></center>
+            <h4>harga=Rp500.000 <button class="btn success">Beli</button></h4>
+        </div>
+        <div class="kotak">
+            <center><img src="gambar2.png" width="250px"></center>
+            <h4>harga=Rp500.000 <button class="btn success">Beli</button></h4>
+        </div>
+        <div class="kotak">
+            <center><img src="gambar3.png" width="250px" ></center>
+            <h4>harga=Rp500.000 <button class="btn success">Beli</button></h4>
+        </div>
+    </div>
+    <div class="kanan">
+        keranjang Belanja
+    </div>
+</body>
+</html>
